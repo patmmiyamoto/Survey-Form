@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styleeee.css">
+</head>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center" style="font-family:cursive;">K-drama Survey Form</h1>
+    <p id="description" class="description text-center">
+      Tell us your favorite k-drama!
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name" style="font-family:cursive;">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email" style="font-family:cursive;">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email" style="font-family:cursive;">Country of Origin</label>
+      <input
+        type="country"
+        name="country"
+        id="country"
+        class="form-control"
+        placeholder="Country"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number" style="font-family:cursive;"
+        >Age<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p style="font-family:cursive;">How often do you watch Korean shows?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Select what applies</option>
+        <option value="student">Very often (everyday)</option>
+        <option value="job">Often</option>
+        <option value="learner">Moderately</option>
+        <option value="preferNo">Very Little</option>
+        <option value="other">Rarely</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p style="font-family:cursive;">Can you speak Korean Language?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="Yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="Currently learning the language"
+          type="radio"
+          class="input-radio"
+        />Currently learning the language</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="No"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+
+
+
+    <div class="form-group">
+      <p style="font-family:cursive;">
+        What online streaming sites do you use to watch Korean dramas?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Viu</option>
+        <option value="projects">Rakuten Viki</option>
+        <option value="community">Netflix</option>
+        <option value="openSource">KissAsian</option>
+        <option value="openSource">Drama Fever</option>
+        <option value="openSource">Crunchyroll</option>
+        <option value="openSource">Hulu</option>
+        <option value="openSource">Youtube</option>
+        <option value="openSource">Drama Cool</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p style="font-family:cursive;">
+        What k-drama have you already watched?
+        <span class="clue">(Check all that apply)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="front-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />True Beauty</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projects"
+          type="checkbox"
+          class="input-checkbox"
+        />It's Okay to Not be Okay</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualization"
+          type="checkbox"
+          class="input-checkbox"
+        />Full House</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Princess Hours</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />My ID is Gangnam Beauty</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="gitter-help-rooms"
+          type="checkbox"
+          class="input-checkbox"
+        />Weightlifting Fairy</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />I Can Hear Your Voice</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="city-meetups"
+          type="checkbox"
+          class="input-checkbox"
+        />While you were Sleeping</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />The Heirs</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />To the Beautiful You</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional-courses"
+          type="checkbox"
+          class="input-checkbox"
+        />Mr. Queen</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p style="font-family:cursive;">Any k-drama recommendation?</p>
+      <textarea
+        id="recommendation"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your recommendation here"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
